@@ -7,7 +7,17 @@ body {
     align-items: center;
 }
 
-#verticalButtons{
+.introduction {
+    display: block;
+    height: 100vh;
+}
+
+.introduction p {
+    top: 0;
+    padding: 0 10px;
+}
+
+#verticalButtons {
     display: flex;
     flex-direction: column;
     padding: 0 2px;
