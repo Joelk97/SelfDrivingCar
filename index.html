@@ -5,14 +5,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div class="introduction"><p>In this application you have the opportunity to assist an artificial intelligence that learns to drive a toy car. The goal for the AI is to learn how to avoid other cars and the roadsides.
-            Your job is to set the number of cars and the learning rate.
-            During the simulation you will always be shown the car with the best driving score.
-            Increasing the number of cars allows you to raise the probability of getting one, capable of driving without causing accidents. The maximum number of cars depends on the capacity of your browser and CPU (usually between 100 and 1000).
-            Through the value of the learning rate (between 0 and 1), you can tell the AI how fast it should learn from the previous car.
+        <div class="introduction"><p>In this application you have the opportunity to assist an artificial intelligence that learns to drive a toy car. The goal for the AI is to learn how to avoid other cars and the roadsides. <br>
+            Your job is to set the number of cars, the learning rate and restart the learning process.
+            <br><br> During the simulation it will be always shown the car with the best driving score of the actual simulation.
+            <br> Increasing the number of cars allows you to raise the probability of getting one, capable of driving without causing accidents. The maximum number of cars depends on the capacity of your browser and CPU (usually between 100 and 1000).
+            <br><br> Through the value of the learning rate (between 0 and 1), you can tell the AI how fast it should learn from the previous car.
             Example: a high learning rate, close to 1, will cause cars to differ a lot from the saved car. A low learning rate, close to 0, will lead cars to behave very similar to the saved car.
             Usually at the beginning of the simulation it is best to work with a learning rate around 0.3, and then move closer and closer to zero.
-            Whenever you wanted to save a new car, as you like its driving capabilities, click on the "save" button. When you want to restart the simulation with the saved car, click on the refresh button. By doing so there will be a chance to get an even better car.
+            Whenever you want to save a new car, as you like its driving capabilities, click on the "save" button. Then you can restart the simulation with the saved car by clicking on the refresh button. By doing so there will be a chance to get an even better car.
         </p></div>
         <canvas id="carCanvas"></canvas>
         <div id="verticalButtons">
