@@ -51,6 +51,9 @@ const traffic=[
     new Car(road.getLaneCenter(0),-700,30,50,"DUMMY",2),
     new Car(road.getLaneCenter(2),-750,30,50,"DUMMY",2),
     new Car(road.getLaneCenter(1),-1000,30,50,"DUMMY",2),
+    new Car(road.getLaneCenter(0),-1100,30,50,"DUMMY",2),
+    new Car(road.getLaneCenter(2),-1300,30,50,"DUMMY",2),
+    new Car(road.getLaneCenter(1),-1300,30,50,"DUMMY",2),
     new Car(road.getLaneCenter(2),-1500,30,50,"DUMMY",2),
     new Car(road.getLaneCenter(1),-1500,30,50,"DUMMY",2),
     new Car(road.getLaneCenter(0),-1650,30,50,"DUMMY",2),
@@ -92,7 +95,7 @@ function discard(){
 function generateCars(N){
     const cars=[];
     for(let i=0;i<N;i++){
-        cars.push(new Car(road.getLaneCenter(1),100,30,50,"AI"));
+        cars.push(new Car(road.getLaneCenter(0),100,30,50,"AI"));
     }
     return cars;
 }
