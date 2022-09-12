@@ -84,7 +84,7 @@ function changeLearningRate(){
     JSON.stringify(lRate.value));
 }
 
-function save(){
+function saveCar(){
     localStorage.setItem("bestBrain",
     JSON.stringify(bestCar.brain));
 }
@@ -115,7 +115,7 @@ function animate(time){
     carCanvas.height=window.innerHeight;
     networkCanvas.height=window.innerHeight;
 
-    carCtx.save();
+    carCtx.saveCar();
     carCtx.translate(0,-bestCar.y+carCanvas.height*0.7);
 
     road.draw(carCtx);
