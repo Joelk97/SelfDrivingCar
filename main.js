@@ -115,7 +115,7 @@ function animate(time){
     carCanvas.height=window.innerHeight;
     networkCanvas.height=window.innerHeight;
 
-    carCtx.saveCar();
+    carCtx.save();
     carCtx.translate(0,-bestCar.y+carCanvas.height*0.7);
 
     road.draw(carCtx);
